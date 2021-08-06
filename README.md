@@ -13,3 +13,13 @@
 * or you can follow examples done in main.py running `python3 main.py`
 
 ## Exercise 2
+### Requirements
+* npm +6 or yarn +1.22
+* vue-cli (optional)
+## How to run
+* place to auto-save folder
+* install dependencies: 
+    - using npm `npm install`
+    - using yarn `yarn install`
+* yarn serve
+* in browser go to localhost:8080
