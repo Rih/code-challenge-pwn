@@ -1,7 +1,11 @@
 <template>
-  <div class="hello">
-    <h1>Place your text</h1>
-    <input class="input_delay" v-model="text" type="text" @keyup="handleInputDebounced" />
+  <div class="container">
+    <input
+      class="input_delay"
+      v-model="text"
+      type="number"
+      @keyup="handleInputDebounced"
+    />
     <span :class="{ saving__fade: saving.show, saving: !saving.show }">
       {{ saving.msg }}
     </span>
@@ -23,9 +27,9 @@ export default {
     text: "",
   }),
   methods: {
-    handleInput() {
+    async handleInput() {
       this.setSaving(true);
-      this.callAPI(this.text);
+      await this.callAPI(this.text);
     },
     ...mapActions(["setSaving", "callAPI"]),
   },
@@ -43,8 +47,8 @@ export default {
 .saving {
   display: none;
 }
-body{
-  background: #F6BF89
+body {
+  background: #f6bf89;
 }
 
 * {
@@ -52,10 +56,10 @@ body{
 }
 .saving__fade {
   display: block;
-  
   color: black;
   animation: fadeIn linear 7s;
 }
+
 span {
   color: lightblue;
 }

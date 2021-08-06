@@ -21,5 +21,5 @@
 * install dependencies: 
     - using npm `npm install`
     - using yarn `yarn install`
-* yarn serve
-* in browser go to localhost:8080
+* after install finished, run `yarn serve`
+* Go to the browser and type: localhost:8080

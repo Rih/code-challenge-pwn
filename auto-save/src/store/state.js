@@ -1,6 +1,7 @@
+import { MESSAGES } from "../js/constants";
 export default {
-    saving: {
-        msg: 'Auto-saving..',
-        show: false,
-    }
-}
+  saving: {
+    msg: MESSAGES.SAVING,
+    show: false,
+  },
+};

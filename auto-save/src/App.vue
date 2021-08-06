@@ -1,5 +1,6 @@
 <template>
   <div id="app">
+    <h1>Place your text</h1>
     <InputDelay />
   </div>
 </template>
@@ -11,14 +12,6 @@ export default {
   name: "App",
   components: {
     InputDelay,
-  },
-  data: () => ({
-    value: "",
-  }),
-  methods: {
-    handleInputDebounced(t) {
-      console.log({ t });
-    },
   },
 };
 </script>
